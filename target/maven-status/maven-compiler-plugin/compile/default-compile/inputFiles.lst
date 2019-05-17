@@ -1,0 +1,7 @@
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/controllers/MainController.java
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/datatransferobjects/Movie.java
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/MovieRecommenderApplication.java
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/webservice/OMDBService.java
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/datatransferobjects/MovieRequest.java
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/entities/Movie.java
+/Users/arjunmayur/Documents/MovieRecommender/src/main/java/com/mrs/movierecommender/movie/recommender/webservice/auth/BasicAuthentication.java

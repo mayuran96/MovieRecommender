@@ -1,0 +1,7 @@
+com/mrs/movierecommender/movie/recommender/entities/Movie.class
+com/mrs/movierecommender/movie/recommender/webservice/OMDBService.class
+com/mrs/movierecommender/movie/recommender/datatransferobjects/MovieRequest.class
+com/mrs/movierecommender/movie/recommender/controllers/MainController.class
+com/mrs/movierecommender/movie/recommender/MovieRecommenderApplication.class
+com/mrs/movierecommender/movie/recommender/webservice/auth/BasicAuthentication.class
+com/mrs/movierecommender/movie/recommender/datatransferobjects/Movie.class
