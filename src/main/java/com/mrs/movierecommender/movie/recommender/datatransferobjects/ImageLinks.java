@@ -5,8 +5,6 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class GoogleBook {
-    String kind;
-    Item[] items;
-
+public class ImageLinks {
+    private String thumbnail;
 }

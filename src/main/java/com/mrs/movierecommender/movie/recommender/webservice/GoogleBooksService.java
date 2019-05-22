@@ -2,8 +2,6 @@ package com.mrs.movierecommender.movie.recommender.webservice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mrs.movierecommender.movie.recommender.datatransferobjects.GoogleBook;
-import com.mrs.movierecommender.movie.recommender.datatransferobjects.Movie;
-import com.mrs.movierecommender.movie.recommender.datatransferobjects.MovieRequest;
 import com.mrs.movierecommender.movie.recommender.webservice.auth.Authentication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,13 +29,10 @@ public class GoogleBooksService {
         try {
             URI uri = new URI(String.format("https://www.googleapis.com/books/v1/volumes?q=%s&key=%s",subject,apiKey));
             ResponseEntity<String> findBookResponse = restTemplate.getForEntity(uri, String.class);
-            logger.info(findBookResponse.getBody());
-            //            MovieRequest movieRequest = objectMapper.readValue(findBookResponse.getBody(), GoogleBook.class);
-//            Movie[] movieResults = movieRequest.getResults();
-//            movie = movieResults[0];
+            GoogleBook googleBook = objectMapper.readValue(findBookResponse.getBody(), GoogleBook.class);
 
         }
-        catch(URISyntaxException ex)
+        catch(URISyntaxException | IOException ex)
         {
             logger.error(ex.toString());
         }
