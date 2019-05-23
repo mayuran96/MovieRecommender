@@ -24,7 +24,6 @@ public class GoogleBooksService {
 
     public GoogleBook findBook(String subject)
     {
-        //https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=yourAPIKey
         GoogleBook book = null;
         try {
             URI uri = new URI(String.format("https://www.googleapis.com/books/v1/volumes?q=%s&key=%s",subject,apiKey));

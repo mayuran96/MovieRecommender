@@ -1,6 +1,7 @@
 package com.mrs.movierecommender.movie.recommender;
 
 import com.mrs.movierecommender.movie.recommender.datatransferobjects.Movie;
+import com.mrs.movierecommender.movie.recommender.recommender.Recommender;
 import com.mrs.movierecommender.movie.recommender.webservice.GoogleBooksService;
 import com.mrs.movierecommender.movie.recommender.webservice.OMDBService;
 import org.springframework.boot.CommandLineRunner;
@@ -19,9 +20,10 @@ public class MovieRecommenderApplication implements CommandLineRunner {
 //		OMDBService movieService = new OMDBService();
 //		Movie movie = movieService.findMovie("Avengers: Endgame");
 //		System.out.println(movie.toString());
-		GoogleBooksService s = new GoogleBooksService();
-		s.findBook("scary");
-
+	//		GoogleBooksService s = new GoogleBooksService();
+	//		s.findBook("scary");
+		Recommender recommendation = new Recommender();
+		recommendation.recommendation();
 	}
 
 }
